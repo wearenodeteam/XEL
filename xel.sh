@@ -78,7 +78,7 @@ read pool_type
 if [[ "$pool_type" == "a" ]]; then
     # Xelis Pool addresses
     case $server_choice in
-        a) pool="stratum+tcp://us1.xelis.1miner.net:4073" ;;
+        a) pool="stratum+tcp://sg.vipor.io:5077" ;;
         b) pool="stratum+tcp://cn.vipor.io:5077" ;;
         c) pool="stratum+tcp://ap.vipor.io:5077" ;;
         d) pool="stratum+tcp://au.vipor.io:5077" ;;
