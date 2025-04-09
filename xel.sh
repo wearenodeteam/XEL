@@ -78,49 +78,49 @@ read pool_type
 if [[ "$pool_type" == "a" ]]; then
     # Xelis Pool addresses
     case $server_choice in
-        a) pool="stratum+ssl://sg.vipor.net:5177" ;;
-        b) pool="stratum+ssl://cn.vipor.net:5177" ;;
-        c) pool="stratum+ssl://ap.vipor.net:5177" ;;
-        d) pool="stratum+ssl://au.vipor.net:5177" ;;
-        e) pool="stratum+ssl://fr.vipor.net:5177" ;;
-        f) pool="stratum+ssl://de.vipor.net:5177" ;;
-        g) pool="stratum+ssl://ua.vipor.net:5177" ;;
-        h) pool="stratum+ssl://fi.vipor.net:5177" ;;
-        i) pool="stratum+ssl://ro.vipor.net:5177" ;;
-        j) pool="stratum+ssl://pl.vipor.net:5177" ;;
-        k) pool="stratum+ssl://kz.vipor.net:5177" ;;
-        l) pool="stratum+ssl://usw.vipor.net:5077" ;;
-        m) pool="stratum+ssl://us.vipor.net:5077" ;;
-        n) pool="stratum+ssl://tr.vipor.net:5077" ;;
-        o) pool="stratum+ssl://usse.vipor.net:5077" ;;
-        p) pool="stratum+ssl://ussw.vipor.net:5077" ;;
-        q) pool="stratum+ssl://ca.vipor.net:5077" ;;
-        r) pool="stratum+ssl://ru.vipor.net:5077" ;;
-        s) pool="stratum+ssl://sa.vipor.net:5077" ;;
+        a) pool="sg.xelis.herominers.com:1225" ;;
+        b) pool="stratum+tcp://cn.vipor.net:5077" ;;
+        c) pool="stratum+tcp://ap.vipor.net:5077" ;;
+        d) pool="stratum+tcp://au.vipor.net:5077" ;;
+        e) pool="stratum+tcp://fr.vipor.net:5077" ;;
+        f) pool="stratum+tcp://de.vipor.net:5077" ;;
+        g) pool="stratum+tcp://ua.vipor.net:5077" ;;
+        h) pool="stratum+tcp://fi.vipor.net:5077" ;;
+        i) pool="stratum+tcp://ro.vipor.net:5077" ;;
+        j) pool="stratum+tcp://pl.vipor.net:5077" ;;
+        k) pool="stratum+tcp://kz.vipor.net:5077" ;;
+        l) pool="stratum+tcp://usw.vipor.net:5077" ;;
+        m) pool="stratum+tcp://us.vipor.net:5077" ;;
+        n) pool="stratum+tcp://tr.vipor.net:5077" ;;
+        o) pool="stratum+tcp://usse.vipor.net:5077" ;;
+        p) pool="stratum+tcp://ussw.vipor.net:5077" ;;
+        q) pool="stratum+tcp://ca.vipor.net:5077" ;;
+        r) pool="stratum+tcp://ru.vipor.net:5077" ;;
+        s) pool="stratum+tcp://sa.vipor.net:5077" ;;
         *) echo -e "${ERROR}🚫 Invalid server choice. Exiting. ${NC}" && exit 1 ;;
     esac
 elif [[ "$pool_type" == "b" ]]; then
     # Xelis Solo addresses
     case $server_choice in
-        a) pool="stratum+ssl://sg.vipor.net:5178" ;;
-        b) pool="stratum+ssl://cn.vipor.net:5178" ;;
-        c) pool="stratum+ssl://ap.vipor.net:5178" ;;
-        d) pool="stratum+ssl://au.vipor.net:5178" ;;
-        e) pool="stratum+ssl://fr.vipor.net:5178" ;;
-        f) pool="stratum+ssl://de.vipor.net:5178" ;;
-        g) pool="stratum+ssl://ua.vipor.net:5178" ;;
-        h) pool="stratum+ssl://fi.vipor.net:5178" ;;
-        i) pool="stratum+ssl://ro.vipor.net:5178" ;;
-        j) pool="stratum+ssl://pl.vipor.net:5178" ;;
-        k) pool="stratum+ssl://kz.vipor.net:5178" ;;
-        l) pool="stratum+ssl://usw.vipor.net:5178" ;;
-        m) pool="stratum+ssl://us.vipor.net:5178" ;;
-        n) pool="stratum+ssl://tr.vipor.net:5178" ;;
-        o) pool="stratum+ssl://usse.vipor.net:5178" ;;
-        p) pool="stratum+ssl://ussw.vipor.net:5178" ;;
-        q) pool="stratum+ssl://ca.vipor.net:5178" ;;
-        r) pool="stratum+ssl://ru.vipor.net:5178" ;;
-        s) pool="stratum+tcp://sa.vipor.net:5178" ;;
+        a) pool="stratum+tcp://sg.vipor.net:5078" ;;
+        b) pool="stratum+tcp://cn.vipor.net:5078" ;;
+        c) pool="stratum+tcp://ap.vipor.net:5078" ;;
+        d) pool="stratum+tcp://au.vipor.net:5078" ;;
+        e) pool="stratum+tcp://fr.vipor.net:5078" ;;
+        f) pool="stratum+tcp://de.vipor.net:5078" ;;
+        g) pool="stratum+tcp://ua.vipor.net:5078" ;;
+        h) pool="stratum+tcp://fi.vipor.net:5078" ;;
+        i) pool="stratum+tcp://ro.vipor.net:5078" ;;
+        j) pool="stratum+tcp://pl.vipor.net:5078" ;;
+        k) pool="stratum+tcp://kz.vipor.net:5078" ;;
+        l) pool="stratum+tcp://usw.vipor.net:5078" ;;
+        m) pool="stratum+tcp://us.vipor.net:5078" ;;
+        n) pool="stratum+tcp://tr.vipor.net:5078" ;;
+        o) pool="stratum+tcp://usse.vipor.net:5078" ;;
+        p) pool="stratum+tcp://ussw.vipor.net:5078" ;;
+        q) pool="stratum+tcp://ca.vipor.net:5078" ;;
+        r) pool="stratum+tcp://ru.vipor.net:5078" ;;
+        s) pool="stratum+tcp://sa.vipor.net:5078" ;;
         *) echo -e "${ERROR}🚫 Invalid server choice. Exiting. ${NC}" && exit 1 ;;
     esac
 else
