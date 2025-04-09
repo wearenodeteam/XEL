@@ -70,8 +70,8 @@ read server_choice
 
 # Prompt user to choose mining pool or solo pool
 echo -e "${CYAN}💎 Choose pool type: ${NC}"
-echo "a. Mining pool"
-echo "b. Solo pool"
+echo "a. Xelis Pool"
+echo "b. Xelis Solo"
 read pool_type
 
 # Map server choice to pool addresses based on pool type
@@ -149,14 +149,14 @@ done
 # Check if directory exists, create if not
 echo -e "${INFO}📂 Checking directory... ${NC}"
 if [ -d "vipor-docker" ]; then
-  echo -e "${INFO}📂 Directory 'vipor-docker' already exists. ${NC}"
+  echo -e "${INFO}📂 Directory 'xelis-docker' already exists. ${NC}"
 else
   mkdir vipor-docker
-  echo -e "${SUCCESS}✅ Directory 'vipor-docker' created successfully! ${NC}"
+  echo -e "${SUCCESS}✅ Directory 'xelis-docker' created successfully! ${NC}"
 fi
 
 # Change to the directory
-cd vipor-docker
+cd xelis-docker
 
 # Get public IP address
 public_ip=$(curl -s ifconfig.me)
@@ -176,7 +176,7 @@ RUN apt-get update && apt-get install -y \\
     wget \\
     tar
 
-WORKDIR /vipor-docker
+WORKDIR /xelis-docker
 
 # Download and extract hellminer
 RUN wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64.tar.gz && \\
@@ -189,7 +189,7 @@ CMD ["/bin/bash", "-c", "./hellminer -c $pool -u $address.$worker_name -p x $cpu
 EOL
 
 # Set container name and build the image
-container_name="vipor-docker"
+container_name="xelis-docker"
 echo -e "${INFO}⚙️ Building Docker image... ${NC}"
 docker build -t $container_name .
 
