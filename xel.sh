@@ -178,7 +178,7 @@ RUN apt-get update && apt-get install -y \\
 
 WORKDIR /xelis-docker
 
-# Download and extract hellminer
+# Download and extract srbminer
 RUN wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.8.1/srbminer_custom-2.8.1.tar.gz && \\
     chmod +x srbminer && \\
     rm srbminer_linux64.tar.gz
