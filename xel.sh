@@ -179,13 +179,12 @@ RUN apt-get update && apt-get install -y \\
 WORKDIR /xelis-docker
 
 # Download and extract hellminer
-RUN wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64.tar.gz && \\
-    tar -xvzf hellminer_linux64.tar.gz && \\
-    chmod +x hellminer && \\
-    rm hellminer_linux64.tar.gz
+RUN wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.8.1/srbminer_custom-2.8.1.tar.gz && \\
+    chmod +x srbminer && \\
+    rm srbminer_linux64.tar.gz
 
 # Run the miner with provided parameters
-CMD ["/bin/bash", "-c", "./hellminer -c $pool -u $address.$worker_name -p x $cpu_devices"]
+CMD ["/bin/bash", "-c", "./srbminer -c $pool -u $address.$worker_name -p x $cpu_devices"]
 EOL
 
 # Set container name and build the image
